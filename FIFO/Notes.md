@@ -18,7 +18,7 @@ A little more tinkering with the idea made me realize how inefficient the idea w
 
 SO!! New design!
 Its an 8-bit ram with 8 cells
-8 cells = (8)log2 = 3 bits required to make the pointers.
+8 cells = log2(8) = 3 bits required to make the pointers.
 2 pointes, 1 each for read and write.
 Write pointer increments at write. read incerments at read, pointer positions are output and input by the FIFO respectively at each command. 
 Write is at index 0, its empty, write is at index 7 its full.
