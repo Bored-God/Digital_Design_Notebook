@@ -1,4 +1,4 @@
-#Alright, FIFO
+Alright, FIFO
 
 today is 29th Aug 2026. And I worked on and learnt what exactly a FIFO is. 
 
