@@ -48,5 +48,19 @@ Today I learnt the following:
 3. Handeling edge cases and designing around them.
 4. Well, number 4 is coming along for the ride cuz it felt lonely.
 
-
 See you tomorrow for what comes next.
+
+UPDATE! 31st Aug 2026.
+
+While learning more about verification methods, i came across Formal Verification, this was already part of the roadmap, but apparently, there is a simpler version called Automated checking/Scoreboard verification. 
+Basically, up until now, I was manually verifying the graphs for each an every change (like a caveman. 😭😭) and that's called visual verification. 
+Where we "see" the actual problem. 
+
+Scoreboard verification on the other hand, has a PASS/FAIL criteria and tells you exactly what case passed/failed. or when exactly that happened after execution in the console. 
+I mean, if XX (high impedance) propagates thru the circuit, then it is pretty evident, but if its more subtle, like a false value, or things like that, its easier to catch.
+This helps catch the most devious of bugs. TIMING ISSUES/RACE CONDITIONS!!!
+
+So, i added the scoreboard to the verification for the FIFO and im please to announce (after an hr or so of debugging my code. 💀💀) 
+IT WORKS!! 🌈🌈.
+
+Stay tuned for what else I work on today.
