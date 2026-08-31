@@ -1,5 +1,5 @@
 # ARBITER 
-Its 31st Aug 2026 and for some reason Arbiter sounds much more serious than it should. 💀💀
+```Its 31st Aug 2026 and for some reason Arbiter sounds much more serious than it should. 💀💀
 
 An Arbiter is a module which helps the system/module "choose" who is gets priority to execute their operation. 
 (if you ask me, they should do a showdown and just Rock Paper Scissors the hell out of it, but ig electrons and I don't share the same level of intelligence.)
@@ -17,14 +17,14 @@ The problem statement: create a one-hot encoded Arbiter for 4 operation channels
 
 I know this is becoming a theme of sorts now, but the initial idea for this came from a software perspective. (I did Coding for a good 3 semesters, its not my fault I think in algos 😭😭).
 the initial algorithm that I thought up was:
-'''text
+
 (Input   (3:0)   =  requests (one hot encoded).      Requests -> which operations want to use the resource.        
 output   (3:0)   =  grant    (one hot encoded).         grant -> which operation gets to use said resource.
-priority (1:0)   =  what the current loop starts at.                                                  )'''
+priority (1:0)   =  what the current loop starts at.                                                  )
 The arbiter priority begins at 0.
-  '''text Input > | checks if operation 0 is requesting, then grant 0001. if not, then check if operation 1 is req.... to infinity, if no one is requesting, then grant = 0000 (default value)| > output. '''
+   Input > | checks if operation 0 is requesting, then grant 0001. if not, then check if operation 1 is req.... to infinity, if no one is requesting, then grant = 0000 (default value)| > output. 
 
-'''text
+
 for this psudocode would be:    case(priority)
                                 case 0: check if op 0
                                         out (0001)
@@ -33,7 +33,7 @@ for this psudocode would be:    case(priority)
                                 case 2: ...
                                 case 3: ...
                                 endcase 
-                                '''
+                                ```
                                
 But this doesnt really work well cuz we need to check each and every case for every input till atleast some operation gets to use it. 
 The flaw with this was basically i was thinking that they would have to run one after the other, in sequence. That meant to make it clocked.
@@ -59,3 +59,4 @@ What I learnt today:
 4. Learnt the implementation of a Round Robin arbiter in SystemVerilog.
 
 Check out the file and ill see you tomorrow for what comes next!! 
+```
