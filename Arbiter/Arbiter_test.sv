@@ -1,6 +1,5 @@
 module Arbiter_test;
 logic [3:0] req, grant;
-logic [1:0] pr,gt;
 logic clk,done;
 
 initial begin 
@@ -15,5 +14,5 @@ initial begin
 end
 
 
-Arbiter m0 (req,grant,clk,done,pr,gt);
+Arbiter m0 (req,grant,clk,done);
 endmodule
