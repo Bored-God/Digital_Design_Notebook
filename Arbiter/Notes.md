@@ -62,3 +62,6 @@ What I learnt today:
 
 Check out the file and ill see you tomorrow for what comes next!! 
 
+UPDATE!! 
+Ok, so the next part of the study was SVA.
+I practiced basic SVA on the test benches for the FIFO and Arbiter and added assertions to the test benches in the files as well.
